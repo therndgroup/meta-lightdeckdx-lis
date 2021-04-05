@@ -1,6 +1,6 @@
 # meta-lightdeckdx-lis  
 
-### The LightDeckDx LIS Server Yocto layer installs a gRPC-based LIS server for use by the LightDeck instrument software. These instructions descibe the changes necessary when adding the layer to an existing Poky build configuration  
+### The LightDeckDx LIS Server `meta-lightdeckdx-lis` layer adds a gRPC-based LIS server to the Yocto image build for use by the LightDeckDx instrument software. This layer is used to interface a LightDeckDx instrument to an external LIS host. These instructions descibe the changes necessary for adding the `meta-lightdeckdx-lis` layer to an existing Poky build configuration.  
 
 
 #### I. In the Poky `build/conf/` directory make the following changes:  
@@ -31,6 +31,11 @@ BBLAYERS ?= " \
 * layer.conf  
 ##### Ensure both `hardknott` and `gatesgarth` Poky versions are specified 
 ---
-`LAYERSERIES_COMPAT_xxx-layer = " hardknott gatesgarth"`
+`LAYERSERIES_COMPAT_xxx-layer = " hardknott gatesgarth"`  
+
+#### III. Package output:  
+`lightdeckdx-lis-1.0-r0.armv7vet2hf_neon.rpm`
+
+
  
 
