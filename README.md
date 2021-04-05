@@ -27,8 +27,8 @@ BBLAYERS ?= " \
 ---
 `IMAGE_INSTALL_append = " lightdeckdx-lis"`
 
-#### II. layer.conf  
-##### In the `layer.conf` of each meta layer listed in `bblayers.conf`, ensure both `hardknott` and `gatesgarth` Poky versions are specified  
+#### II. In the `layer.conf` of each meta layer listed in `bblayers.conf`, ensure both `hardknott` and `gatesgarth` Poky versions are specified  
+* layer.conf   
 ---
 `LAYERSERIES_COMPAT_xxx-layer = " hardknott gatesgarth"`
  
