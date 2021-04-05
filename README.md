@@ -28,7 +28,7 @@ BBLAYERS ?= " \
 ---
 `IMAGE_INSTALL_append = " lightdeckdx-lis"`
 
-#### II. Update Poky layer series compatibility in `conf/layer.conf` of each meta layer configured in `bblayers.conf` from step I. above 
+#### II. Update Poky layer series compatibility in `conf/layer.conf` of each meta layer configured in `bblayers.conf` from step I above 
 * layer.conf  
 ##### Ensure both `hardknott` and `gatesgarth` Poky versions are specified 
 ---
