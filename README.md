@@ -44,4 +44,4 @@ BBLAYERS ?= " \
 #### IV. Running  
 A script named `lightdeckdx-lis`, located in `/usr/bin/` can be used to start the LIS server. A `systemd` service should be configured to call this script at module boot.  
 
-Application NOTE: To enable connection via Unix Domain Socket, follow the example at (https://github.com/grpc/grpc-dotnet/blob/master/examples/Transporter/Server/Program.cs) for for gRPC LIS server host and (https://github.com/Danie1/grpc/blob/example-helloworld-uds/examples/cpp/helloworld_uds/greeter_client.cc) for the C++ gRPC client connection. Use the same UDS name for both client and server.
+Application NOTE: If both the gRPC C++ client code and gRPC LIS server are running on the module, you can connect using a Unix Domain Socket instead of the default TCP-based connection. To enable a UDS-based connection, follow the example at (https://github.com/grpc/grpc-dotnet/blob/master/examples/Transporter/Server/Program.cs) for for gRPC LIS server host and (https://github.com/Danie1/grpc/blob/example-helloworld-uds/examples/cpp/helloworld_uds/greeter_client.cc) for the C++ gRPC client connection. Use the same UDS name for both client and server.
