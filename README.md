@@ -40,4 +40,4 @@ BBLAYERS ?= " \
 
 ---
 #### IV. Running  
-A launch script is installed at `/usr/bin/lightdeckdx-lis` is provided to start the LIS server.  
+A script named `lightdeckdx-lis` is installed at `/usr/bin/` can be used to start the LIS server. A `systemd` service should be configured to call this script at module boot.  
