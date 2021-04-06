@@ -26,17 +26,18 @@ BBLAYERS ?= " \
 * local.conf  
 ##### Update local.conf to add lightdeckdx-lis to the list of packages to include in the final image  
 
-`IMAGE_INSTALL_append = " lightdeckdx-lis"`
+`IMAGE_INSTALL_append = " lightdeckdx-lis"`  
+
 ---
 #### II. Update Poky layer series compatibility in `conf/layer.conf` of each meta layer configured in `bblayers.conf` from step I above 
 * layer.conf  
 ##### Ensure both `hardknott` and `gatesgarth` Poky versions are specified 
 `LAYERSERIES_COMPAT_xxx-layer = " hardknott gatesgarth"`  
+
 ---
 #### III. Package output  
-`lightdeckdx-lis-1.0-r0.armv7vet2hf_neon.rpm`
+`lightdeckdx-lis-1.0-r0.armv7vet2hf_neon.rpm`  
+
 ---
 #### IV. Running  
-A launch script is installed at /usr/bin/lightdeckdx-lis is provided to start the LIS server.
- 
-
+A launch script is installed at `/usr/bin/lightdeckdx-lis` is provided to start the LIS server.  
